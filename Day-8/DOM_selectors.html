@@ -35,29 +35,52 @@ On clicking Change Red all the elements with the class red should change to red 
     <button onClick="changeRed()">Change Red</button>
     <button onClick="changeBlue()">Change Blue</button>
     <script>
+
+      let h1 = document.querySelector("h1")
       function changeH1() {
         // the colour of first <h1> should turn to red
-           
+            h1.style.color="red"
       }
 
+      let h3 = document.querySelectorAll("h3");
       function changeH3() {
         // the colour of all <h3> should turn to green
+          for (let i=0;i<h3.length;i++){
+            h3[i].style.color="green"
+
+          }
       }
 
+      let h5 = document.querySelectorAll("h5");
       function changeH5() {
         // the colour of all <h5> should turn to blue
+          for(let i=0;i<h5.length;i++){
+            h5[i].style.color="blue"
+          }
       }
 
+      let ele1 = document.querySelectorAll(".green");
       function changeGreen() {
         // all the elements with the class green should change to green
+        for(let i=0;i<ele1.length;i++){
+          ele1[i].style.color="green"
+        }
       }
 
+      let ele2 = document.querySelectorAll(".red");
       function changeRed() {
         // all the elements with the class red should change to red
+        for(let i=0;i<ele2.length;i++){
+          ele2[i].style.color="red"
+        }
       }
 
+      let ele3 = document.querySelectorAll(".blue");
       function changeBlue() {
         // all the elements with the class blue should change to blue
+        for(let i=0;i<ele3.length;i++){
+          ele3[i].style.color="blue"
+        }
       }
     </script>
   </body>
