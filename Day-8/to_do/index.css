@@ -1,8 +1,10 @@
 div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
   form {
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 50px;
     width: 30%;
