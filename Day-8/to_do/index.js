@@ -22,6 +22,7 @@ function myTodo() {
   td3.innerText = "Delete";
   td3.addEventListener("click", deleteRow);
   td3.style.color = "red";
+  
   tr.append(td1, td2, td3);
   document.querySelector("tbody").append(tr);
 }
