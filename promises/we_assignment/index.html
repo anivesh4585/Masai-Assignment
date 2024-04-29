@@ -15,5 +15,20 @@ else reject it with "negative count" -->
 
 <script>
 
+let count=0;
+let counter=new Promise(function(resolve,reject){
     
+    count=2;
+    if(count>0){
+        resolve("Positive Count")
+    }else{
+        reject("negative count")
+    }
+});
+counter.then(function(data){
+    console.log(data)
+}).catch(function(data1){
+    console.log(data1)
+})
+
 </script>
