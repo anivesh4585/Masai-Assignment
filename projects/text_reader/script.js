@@ -7,11 +7,11 @@ const closeButton = document.getElementById("close");
 
 const data = [
   {
-    image: "drink",
+    image: "thirsty",
     text: "I'm Thirsty",
   },
   {
-    image: "food",
+    image: "hungry",
     text: "I'm Hungry",
   },
   {
@@ -61,9 +61,10 @@ function createBox(item) {
   const { image, text } = item;
   box.classList.add("box");
   box.innerHTML = `
-    <img src='https://github.com/bradtraversy/vanillawebprojects/blob/master/speech-text-reader/img/${image}.jpg?raw=true' alt="${text}"/>
+    <img src= ' https://github.com/anivesh4585/Masai-Assignment/blob/main/projects/text_reader/Images/${image}.jpg?raw=true' alt="${text}"/>
     <p class="info">${text}</p>
     `;
+    //https://github.com/bradtraversy/vanillawebprojects/blob/master/speech-text-reader/img/
   box.addEventListener("click", () => handleSpeech(text, box));
   main.appendChild(box);
 }
